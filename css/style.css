@@ -2104,3 +2104,27 @@ body {
     }
 }
 /* --- FIM DO AJUSTE --- */
+/* AJUSTE PARA O WHATSAPP NÃO COBRIR O LOGO */
+
+/* 1. Dá um espaço extra no topo para o botão verde não tampar o texto */
+body {
+    padding-top: 130px !important; 
+}
+
+/* 2. Se o botão do WhatsApp for uma barra fixa no topo, vamos empurrá-la */
+.whatsapp-button, [class*="whatsapp"], #whatsapp-fixed {
+    top: auto !important;
+    bottom: 20px !important; /* Move o botão para o canto inferior direito */
+    right: 20px !important;
+}
+
+/* 3. Garante que o cabeçalho (Multirastro) fique visível e abaixo do que for necessário */
+header {
+    margin-top: 0 !important;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-top: 150px !important; /* Espaço maior ainda no celular */
+    }
+}
