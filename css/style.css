@@ -2049,4 +2049,16 @@ ul {
         padding-top: 50px !important; 
         position: relative !important;
     }
+}/* Ajuste definitivo para o cabeçalho mobile */
+@media (max-width: 768px) {
+    header, .navbar {
+        position: relative !important; /* Faz ele ocupar o espaço dele e não ficar flutuando */
+        background-color: #000 !important; /* Garante que o fundo seja preto para ler o logo */
+        padding: 15px 0 !important;
+    }
+
+    .hero, .main-content, section:first-of-type {
+        margin-top: 0 !important;
+        padding-top: 20px !important;
+    }
 }
